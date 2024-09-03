@@ -1,0 +1,75 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+
+    box-sizing: border-box;
+}
+.green{
+    background-color: #CCDDBB;
+}
+.pink{
+    background-color: #F8D9C5;
+}
+.yellow{
+    background-color: #F7E9A0;
+}
+.blue{
+    background-color: #C6D8DA;
+}
+.divone{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.divetwo{
+    height: 40px;
+    display: grid;
+    grid-template-areas: 'top-left top-left top-mid top-mid top-right' 'top-left top-left mid-mid bottom-right bottom-right ' 'bottom-left  bottom-left mid-mid bottom-right bottom-right';
+    background-color: #FCF4D0;
+}
+.divethree{
+    height: 40px;
+    display: grid;
+    grid-template-areas: 'top-left top-mid top-mid top-right top-right''bottom-left bottom-left  mid-mid top-right top-right''bottom-left  bottom-left mid-mid bottom-right bottom-right';
+    background-color: #FCF4D0;
+}
+.grid-items{
+    display: grid;
+}
+
+    .item1{
+    grid-area: top-left;
+    font-weight: bold;
+    }
+    .item2{
+        grid-area: top-mid;
+        font-weight: bold;
+    }
+    .item3{
+        grid-area: top-right;
+        font-weight: bold;
+    }
+    .item4{
+        grid-area: bottom-left;
+        font-weight: bold;
+    }
+    .item5{
+        grid-area: mid-mid;
+        font-weight: bold;
+    }
+    .item6{
+        grid-area: bottom-right;
+        font-weight: bold;
+    }
+.line{
+    display: grid;
+    justify-items: end;
+    align-content: end;
+    padding-right: 5px;
+    border: 1px dotted black;
+}
+.divone-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
